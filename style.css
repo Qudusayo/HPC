@@ -7,6 +7,7 @@ body {
   margin: 0;
   position: relative;
   background-color: #000000;
+  overflow-x: hidden;
 }
 
 header {
@@ -415,7 +416,12 @@ header a:hover {
   position: sticky;
   top: 90%;
   left: 90%;
-  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .totop {
+    z-index: -1;
+  }
 }
 
 .speaker {
