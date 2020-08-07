@@ -216,7 +216,7 @@ header a:hover {
 
 @media screen and (max-width: 768px) {
   .img-sm {
-    width: 50%;
+    width: 60%;
     display: block;
     margin: auto;
   }
