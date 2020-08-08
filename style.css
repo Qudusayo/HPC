@@ -135,6 +135,22 @@ header a:hover {
   background-attachment: fixed;
 }
 
+.about {
+  background-image: url(assets/Images/bg3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: difference;
+}
+
+.program {
+  background-image: url(assets/Images/bg4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: hard-light;
+}
+
 .container {
   width: 100%;
   min-height: 85vh;
@@ -144,6 +160,15 @@ header a:hover {
   .container {
     padding: 3em 0;
   }
+}
+
+.fit-content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 
 .flex {
@@ -229,6 +254,24 @@ header a:hover {
   }
 }
 
+.img-tiny {
+  border-radius: 7px;
+  width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+  .img-tiny {
+    width: 60%;
+    display: block;
+    margin: auto;
+  }
+}
+
+.bx-plus {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .shadow {
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3), 0 -3px 3px rgba(0, 0, 0, 0.3), 3px 0 3px rgba(0, 0, 0, 0.3), -3px 0 3px rgba(0, 0, 0, 0.3);
           box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3), 0 -3px 3px rgba(0, 0, 0, 0.3), 3px 0 3px rgba(0, 0, 0, 0.3), -3px 0 3px rgba(0, 0, 0, 0.3);
@@ -304,6 +347,13 @@ header a:hover {
 
 .quote-bg {
   background-image: url(assets/Images/bg1.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.quote-bg2 {
+  background-image: url(assets/Images/bg3.png);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -422,6 +472,13 @@ header a:hover {
   position: sticky;
   top: 90%;
   left: 90%;
+  opacity: .7;
+}
+
+@media screen and (max-width: 768px) {
+  .totop {
+    left: 80%;
+  }
 }
 
 .speaker {
