@@ -49,7 +49,7 @@
         <button data-aos="zoom-out" class="btn font-lg impr bg-brown block m-auto mt-2">MAKE A GREATER IMPACT
             NOW</button>
     </div>
-    <a href="#header" data-easing="scroll" title="Back to top"><button data-aos="zoom-out" class="btn totop bg-brown">&uArr;</button></a>
+    <a id="totop" href="#header" data-easing="scroll" title="Back to top"><button data-aos="zoom-out" class="btn totop bg-brown">&uArr;</button></a>
     <div class="container flex bg-dark py-2">
         <img src="assets/Images/ownner.png" class="col img-sm" alt="message" data-aos="fade-right"
             data-aos-duration="500">
@@ -222,13 +222,19 @@
             duration: 400
         });
     </script>
-    <script
-        src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
-        var scroll = new SmoothScroll('a[href="#header"]', {
-            speed: 1000,
-            speedAsDuration: true
+        const link = document.querySelector("#totop");
+        link.addEventListener("click", clickHandler);
+        function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+        const offsetTop = document.querySelector(href).offsetTop;
+        
+        scroll({
+            top: offsetTop,
+            behavior: "smooth"
         });
+        }
     </script>
 </body>
 

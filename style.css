@@ -424,12 +424,6 @@ header a:hover {
   left: 90%;
 }
 
-@media screen and (max-width: 768px) {
-  .totop {
-    z-index: -1;
-  }
-}
-
 .speaker {
   background-image: url(assets/Images/bg2.jpg);
   background-position: center;
